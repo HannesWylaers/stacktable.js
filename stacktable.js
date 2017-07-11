@@ -11,7 +11,10 @@
  * Requires jQuery version 1.7 or above
  *
  */
-;(function($) {
+
+var stacktable = (function($) {
+  'use strict';
+
   $.fn.cardtable = function(options) {
     var $tables = this,
         defaults = {headIndex:0},
@@ -208,3 +211,5 @@
   };
 
 }(jQuery));
+
+module.exports = stacktable;
